@@ -1,0 +1,133 @@
+{
+  "customerTypes": [
+    {
+      "code": "G",
+      "name": "Guest",
+      "description": "A Hotel Guest"
+    },
+    {
+      "code": "A",
+      "name": "Agency",
+      "description": "A Travel Agency"
+    },
+    {
+      "code": "C",
+      "name": "Company",
+      "description": "A Company"
+    }
+  ],
+  "users": [
+  ],
+  "inputTypeByCustomerType": [
+    {
+      "id": "G",
+      "inputs": [
+        {
+          "label": "Name *",
+          "name": "name",
+          "type": "text",
+          "placeHolder": "Enter your name"
+        },
+        {
+          "label": "Lastname *",
+          "name": "lastname",
+          "type": "text",
+          "placeHolder": "Enter your last name"
+        },
+        {
+          "label": "Email *",
+          "name": "email",
+          "type": "email",
+          "placeHolder": "Enter your email"
+        },
+        {
+          "label": "Phone *",
+          "name": "phone",
+          "type": "number",
+          "placeHolder": "Enter your phone"
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "inputs": [
+        {
+          "label": "Name *",
+          "name": "name",
+          "type": "text",
+          "placeHolder": "Enter your name"
+        },
+        {
+          "label": "Email *",
+          "name": "email",
+          "type": "email",
+          "placeHolder": "Enter your email"
+        },
+        {
+          "label": "Phone *",
+          "name": "phone",
+          "type": "number",
+          "placeHolder": "Enter your phone"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "inputs": [
+        {
+          "label": "Name *",
+          "name": "name",
+          "type": "text",
+          "placeHolder": "Enter your name"
+        },
+        {
+          "label": "Email *",
+          "name": "email",
+          "type": "email",
+          "placeHolder": "Enter your email"
+        },
+        {
+          "label": "Phone *",
+          "name": "phone",
+          "type": "number",
+          "placeHolder": "Enter your phone"
+        }
+      ]
+    }
+  ],
+  "advantagesByCustomerType": [
+    {
+      "id": "G",
+      "advantagesList": [
+        {
+          "description": "Enjoy a 10% discount on your reservation"
+        },
+        {
+          "description": "24hs / 365 days phone. 900 - 000 - 0000"
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "advantagesList": [
+        {
+          "description": "Enjoy a 20% discount on your reservation"
+        },
+        {
+          "description": "24hs / 365 days phone. 900 - 900 - 9000"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "advantagesList": [
+        {
+          "description": "Enjoy a 30% discount on your reservation"
+        },
+        {
+          "description": "24hs / 365 days phone. 500 - 555 - 555"
+        }
+      ]
+    }
+  ]
+}

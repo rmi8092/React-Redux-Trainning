@@ -1,0 +1,199 @@
+$primary-grey: #d2d2d2;
+$secondary-grey: #cecece;
+$dark-color: #212121;
+$blue-color: #00008b;
+$enable-button: #946a1e;
+body {
+    >.container {
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+        /* App wrapper */
+        .app__wrapper {
+            color: $dark-color;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            .fa {
+                &:hover {
+                    cursor: pointer;
+                }
+                &.fa-arrow-left {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    &:before {
+                        color: $primary-grey;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .app__title {
+                padding: 20px 0;
+                border-bottom: 2px solid $primary-grey;
+                text-transform: uppercase;
+                .fa-times {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    &:before {
+                        color: $primary-grey;
+                        font-size: 20px;
+                    }
+                }
+            }
+            button {
+                width: 100%;
+                border-radius: 20px;
+                background: transparent;
+                border: 2px solid #d2d2d2;
+                padding: 7px 0;
+                text-transform: uppercase;
+                &.enabled {
+                    background: $enable-button;
+                    border-color: transparent;
+                    color: white;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            /* SignUp component */
+            .signup {
+                text-align: left;
+                text-transform: uppercase;
+                .app__subtitle {
+                    padding: 15px 0;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                .selector__list {
+                    list-style: none;
+                    padding: 0 20px;
+                    .selector__item {
+                        border-bottom: 1px solid $secondary-grey;
+                        border-left: none;
+                        border-right: none;
+                        padding-left: 10px;
+                        line-height: 40px;
+                        color: $primary-grey;
+                        display: table;
+                        width: 100%;
+                        &:last-child {
+                            border: none;
+                        }
+                        display: block;
+                        color: $primary-grey;
+                        .item__radio {
+                            width: 12px;
+                            height: 12px;
+                            border: 2px solid $primary-grey;
+                            border-radius: 50%;
+                            display: inline-table;
+                            vertical-align: middle;
+                        }
+                        .item__label {
+                            margin-bottom: 0;
+                            margin-left: 15px;
+                            display: inline-table;
+                            vertical-align: middle;
+                        }
+                        &:hover {
+                            color: $blue-color;
+                            cursor: pointer;
+                        }
+                        &.selected {
+                            color: $blue-color;
+                            outline-color: transparent;
+                            .item__radio {
+                                border-color: $blue-color;
+                            }
+                        }
+                    }
+                }
+                .signup__small-text {
+                    padding: 10px 0;
+                    font-size: 10px;
+                    text-transform: capitalize;
+                    text-align: center;
+                }
+                .signup__login {
+                    color: $blue-color;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            /* Form component */
+            .form__wrapper {
+                padding: 20px 10px;
+                .form__group {
+                    text-align: left;
+                    margin-bottom: 20px;
+                    label {
+                        display: block;
+                        text-align: left;
+                        font-size: 10px;
+                    }
+                    input {
+                        border: none;
+                        border-bottom: 1px solid $dark-color;
+                        width: 100%;
+                        &:focus {
+                            outline-color: transparent;
+                        }
+                    }
+                }
+                .form__small-text {
+                    font-size: 10px;
+                    text-align: left;
+                    margin-top: 40px;
+                }
+            }
+            /* Welcome component */
+            .welcome__wrapper {
+                padding: 20px 10px;
+                .welcome__top {
+                    margin-bottom: 30px;
+                    .fa-check-circle {
+                        color: $blue-color;
+                        &:before {
+                            font-size: 90px;
+                        }
+                    }
+                    .welcome__message {
+                        text-transform: uppercase;
+                        margin-top: 20px;
+                    }
+                }
+                .welcome__advantages {
+                    .advantages__list {
+                        margin-bottom: 25px;
+                        padding-left: 10px;
+                        list-style: none;
+                        text-align: left;
+                        .advantages__item {
+                            display: table;
+                            padding: 10px 0;
+                            .fa-check-circle {
+                                display: table-cell;
+                                vertical-align: middle;
+                                color: $blue-color;
+                                &:before {
+                                    font-size: 25px;
+                                }
+                            }
+                            .advantages__gift {
+                                display: table-cell;
+                                vertical-align: middle;
+                                padding-left: 10px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

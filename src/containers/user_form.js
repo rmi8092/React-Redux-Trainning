@@ -12,13 +12,12 @@ const submit = (submitProps, dispatch, ownProps) => {
 }
 
 class UserForm extends Component {
-  componentDidMount () {
-    if (!(this.props.formInputs) && (this.props.selectedUserType)) {
-      this.props.getFormInputs(this.props.selectedUserType)
-    }
+  componentDidMount() {
+    this.props.getFormInputs(this.props.selectedUserType)
   }
 
   goBack = () => {
+    this.props.reset() // limpio el formulario
     this.context.router.push('/')
   }
 
@@ -54,7 +53,7 @@ class UserForm extends Component {
     return false
   }
 
-  render () {
+  render() {
     if (this.props.formInputs) {
       const { handleSubmit, pristine, submitting } = this.props
       let isAllFilled = this.isAllFilled()
